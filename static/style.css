@@ -1,0 +1,65 @@
+/*
+******
+*main*
+******
+*/
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.main-img{
+    height: 40rem;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/homepage.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment:fixed;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color:black;
+}
+
+.def {
+    text-decoration: none;
+    color: black;
+}
+
+.def:hover {
+    color: rgb(255, 106, 106);
+}
+
+h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.slider{
+    position: relative;
+    border:none;
+}
+
+.slider::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 7px;
+    color: rgb(255, 106, 106);
+    background-color:  rgb(255, 106, 106);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+}
+
+.slider:hover::after{
+    transform: scaleX(1);
+}

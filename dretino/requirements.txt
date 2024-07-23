@@ -1,0 +1,23 @@
+# local package
+-e .
+
+# external requirements
+click
+python-dotenv
+
+
+pandas
+opencv-python
+numpy
+pillow
+tqdm
+torch
+timm
+torchmetrics
+wandb
+lightly
+albumentations
+scikit-learn
+matplotlib
+torchvision
+setuptools
